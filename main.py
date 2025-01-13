@@ -11,7 +11,7 @@ SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Drawing Example"
 
 
-def circle():
+def circles():
     for i in range(20):
         radius = random.randint(10, 30)
 
@@ -52,7 +52,7 @@ class MyGame(arcade.Window):
         de votre jeu à l'écran.
         """
         self.clear()
-        circle()
+        circles()
 
     def on_update(self, delta_time):
         """
